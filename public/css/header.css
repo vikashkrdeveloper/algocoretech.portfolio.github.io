@@ -1,0 +1,93 @@
+.header-container {
+  width: 100%;
+  height: 60px;
+  background: linear-gradient(
+    20deg,
+    rgb(91, 153, 105),
+    rgb(125, 58, 188),
+    rgb(141, 74, 74)
+  );
+  border-bottom: 1px solid rgb(109, 109, 109);
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0px;
+  z-index: 1;
+}
+
+.name-container {
+  width: 400px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.sign-name {
+  font-family: "Dancing Script", cursive;
+  cursor: pointer;
+  position: relative;
+  color: white;
+  transition: .8s;
+  opacity: 0;
+  animation: slidetop .8s ease forwards;
+}
+
+.nav-bar-container {
+  width: 74%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ul-bar-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.list-items-container {
+  list-style: none;
+  width: 80px;
+  margin: 3px;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 1;
+  transition: 0.4s;
+  animation: navslidetop .8s ease forwards;
+
+}
+.last-container {
+  margin-right: 30px;
+}
+
+.link-texts {
+  font-size: 17px;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+}
+
+@keyframes slidetop {
+  0% {
+    transform: translatex(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translatex(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes navslidetop{
+  0%{
+    transform: translatey(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translatey(0px);
+    opacity: 1;
+  }
+}

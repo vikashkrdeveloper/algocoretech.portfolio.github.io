@@ -1,0 +1,225 @@
+.main-container {
+  width: 100%;
+  height: auto;
+  margin-top: 60px;
+  background: linear-gradient(
+    30deg,
+    rgb(35, 56, 40),
+    rgb(50, 35, 61),
+    rgb(56, 69, 93)
+  );
+}
+
+.main-details-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-first-container {
+  width: 30%;
+  height: 650px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-second-container {
+  width: 60%;
+  height: 650px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.img-right-my-container {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.my-image {
+  width: 380px;
+  height: 380px;
+  box-shadow: -1px -1px 19px 17px rgb(255, 225, 0);
+  -webkit-box-shadow: -1px -1px 15px 12px rgb(9, 255, 0);
+  border: 10px solid rgba(143, 20, 177, 0.856);
+  border-radius: 50%;
+ 
+  border-style:groove;
+
+
+  transition: 0.2s;
+  opacity: 0;
+  animation: sliderright 0.8s ease forwards;
+}
+
+.containerfirst-introduction {
+  width: 100%;
+  height: auto;
+}
+.first-main-container-heading {
+  color: rgb(255, 255, 255);
+  width: 100%;
+  height: 45px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  font-size: 45px;
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  transition: 0.2s;
+  animation: sliderleft 0.6s ease forwards;
+}
+.first-main-container-heading1 {
+  color: rgb(255, 255, 255);
+  width: 100%;
+  height: 30px;
+  font-size: 25px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 700;
+  opacity: 0;
+  transition: 0.2s;
+  animation: sliderleft 0.6s ease forwards;
+}
+.first-main-container-text {
+  width: auto;
+  font-size: 25px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  margin-left: 0px;
+  color: rgb(0, 255, 38);
+}
+.first-main-container-tex-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  transition: 0.8s;
+  opacity: 0;
+  animation: sliderleft 0.6s ease forwards;
+}
+.first-main-container-text-vikash {
+  width: 120px;
+  color: white;
+  font-size: 25px;
+  font-weight: 600;
+}
+.first-main-container-text-vikash-details {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+}
+.button-container {
+  width: 100%;
+  height: 50px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+.btn-about {
+  background-color: rgb(255, 170, 0);
+  width: 120px;
+  height: 40px;
+  color: white;
+  font-size: 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 20px;
+  opacity: 0;
+  transition: 0.3s;
+  animation: sliderleft 0.6s ease forwards;
+}
+.btn-about:hover {
+  background: linear-gradient(120deg, rgb(82, 27, 27), rgb(122, 122, 65));
+  color: rgb(0, 213, 255);
+  transition: background 3.5s;
+  transition: color 1.5s;
+}
+.btn-about-icon {
+  font-size: 10px;
+  margin-left: 5px;
+}
+.contact-list-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  margin-bottom: 50px;
+}
+.linkdetals {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: rgb(194, 174, 192);
+  background-color: rgb(28, 22, 22);
+  transition: color 1.5s;
+  transition: background-color 2.5s;
+}
+.linkdetals:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(255, 47, 47);
+  transition: color 1.5s;
+  transition: background-color 1.5s;
+}
+.contact-info-icon-container {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  border-radius: 50%;
+  transition: 0.1s;
+  opacity: 0;
+  animation: sliderleftlink 0.6s ease forwards;
+}
+.typed-cursor {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 900;
+  font-size: 20px;
+  color: rgb(0, 255, 38);
+}
+ 
+
+@keyframes sliderleft {
+  0% {
+    transform: translatex(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translatex(0px);
+    opacity: 1;
+  }
+}
+@keyframes sliderright {
+  0% {
+    transform: translatex(250px);
+    opacity: 0;
+  }
+  100% {
+    transform: translatex(0px);
+    opacity: 1;
+  }
+}
+@keyframes sliderleftlink {
+  0% {
+    transform: translatex(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translatex(0px);
+    opacity: 1;
+  }
+}
+ 

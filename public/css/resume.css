@@ -1,0 +1,27 @@
+html,body{
+    background-color:linear-gradient(
+        30deg,
+        rgb(35, 56, 40),
+        rgb(50, 35, 61),
+        rgb(56, 69, 93)
+      );
+}
+.resume-main-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.resume-main-show-container{
+    margin-top: 80px;
+    width: 80%;
+    height: auto;
+    margin-bottom: 20px;
+
+}
+.resume-pdf{
+width: 100%;
+height: 1150px;
+}

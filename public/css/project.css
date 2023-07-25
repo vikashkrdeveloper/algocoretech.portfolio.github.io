@@ -1,0 +1,101 @@
+.main-project-container {
+  background: linear-gradient(
+    300deg,
+    rgb(35, 56, 40),
+    rgb(50, 35, 61),
+    rgb(56, 69, 93)
+  );
+  width: 100%;
+  height: auto;
+}
+.project-main-details-container {
+  width: 100%;
+  height: 100%;
+}
+
+.project-main-heading-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 80px;
+  background: linear-gradient(
+    130deg,
+    rgb(35, 56, 40),
+    rgb(50, 35, 61),
+    rgb(56, 69, 93)
+  );
+}
+.project-icon {
+  font-size: 40px;
+  color: white;
+}
+.project-text {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+}
+
+.project-text-made {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(255, 238, 0);
+}
+.project-main-container {
+  width: 100%;
+  height: 600px;
+  background: linear-gradient(
+    200deg,
+    rgb(35, 56, 40),
+    rgb(50, 35, 61),
+    rgb(56, 69, 93)
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-container {
+  width: 370px;
+  height: 200px;
+  background-blend-mode: darken;
+  border-radius: 20px;
+  margin: 20px;
+  cursor: default;
+  box-shadow: 0px 0px 20px 2px rgb(0, 255, 221);
+  
+}
+
+.heading-product {
+  position: relative;
+  bottom: 150px;
+  left: 10px;
+
+  color: rgb(254, 175, 5);
+}
+.project-discription {
+  position: relative;
+  background-blend-mode: color-burn;
+  background-blend-mode: darken;
+  left: 10px;
+bottom: 150px;
+  color: rgb(255, 0, 0);
+  font-weight: 700;
+}
+
+.buttonlink {
+  position: relative;
+  left: 20px;
+  bottom: 135px;
+  border-radius: 20px;
+  width: 140px;
+  height: 45px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  background-color: rgb(255, 170, 0);
+  box-shadow: 0px 0px 15px 4px rgba(0, 215, 255, 0.75);
+  -webkit-box-shadow: 0px 0px 15px 4px rgba(0, 215, 255, 0.75);
+  -moz-box-shadow: 0px 0px 15px 4px rgba(0, 215, 255, 0.75);
+  color: white;
+}

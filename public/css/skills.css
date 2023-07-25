@@ -1,0 +1,260 @@
+.skills-container {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  height: auto;
+}
+.skill-main-details-container {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    200deg,
+    rgb(43, 68, 50),
+    rgb(46, 28, 60),
+    rgb(43, 56, 81)
+  );
+}
+.skill-main-show-container {
+  width: auto;
+  height: auto;
+
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.skill-main-all-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+.skill-main-heading-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 80px;
+}
+.skill-main-heading {
+  color: rgb(255, 255, 255);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.skill-main-heading-icon {
+  font-size: 30px;
+  color: white;
+}
+.skill-main-heading-abilities {
+  color: rgb(255, 204, 0);
+}
+
+.all-skills-container {
+  width: 100%;
+  height: 160vh;
+  display: flex;
+  align-items: center;
+}
+
+.technical-skills-container {
+  width: 50%;
+  height: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.professional-skills-container {
+  width: 50%;
+  height: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.technical-skills-box {
+  width: 60%;
+  height: 95%;
+}
+
+.technical-skills-box-heading-container {
+  width: 100%;
+  height: 50px;
+}
+.skills-technical-show-container{
+  position: relative;
+  width: 100%;
+  height:auto;
+  top: 50px;
+}
+
+.skills-technical-box-container{
+  width: 100%;
+  height: 60px;
+  margin-top: 10px;
+}
+.skill-image {
+  width: 100%;
+  height:auto;
+
+}
+.skill-name-image-con{
+  margin-top: 3px;
+  width: 100%;
+  height: auto;
+}
+.skill-name-image{
+   font-size: 10px;
+   font-weight: 600;
+   color: white;
+}
+.skill-gane-percentage{
+  margin-top: 8px;
+  width: 100%;
+  height: 7px;
+  background-color: rgb(7, 81, 77);
+  border-radius: 5px;
+}
+
+.skill-gane-outer-percentage{
+  position: relative;
+  bottom: 8px;
+  width: 90%;
+   border: 4px solid rgb(0, 255, 204);
+  border-radius: 5px;
+}
+.skill-gane-outer-css-percentage{
+  position: relative;
+  bottom: 8px;
+  width: 60%;
+   border: 4px solid rgb(0, 255, 204);
+  border-radius: 5px;
+}
+.percentage-show-container-text{
+  bottom: 40px;
+  left:380px;
+  position: relative;
+  width: 40px;
+  height: 20px;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  border-radius: 5px;
+}
+ .css-percentage{
+  left:250px;
+
+ }
+
+.js-border{
+  width: 85%;
+
+}
+.node-border{
+  width: 80%;
+
+}
+.react-border{
+  width: 75%;
+
+}
+.git-border{
+  width: 65%;
+
+}
+.js-percentage{
+  left:360px;
+
+ }
+.node-percentage{
+  left:340px;
+
+ }
+.react-percentage{
+  left:320px;
+
+ }
+.git-percentage{
+  left:270px;
+
+ }
+
+
+
+.skills-name-heading {
+  text-align: center;
+  color: white;
+}
+.border-containers {
+  background-color: white;
+  width: 160px;
+  height: 1px;
+  border: 3px solid white;
+  border-radius: 5px;
+  position: relative;
+  top: 5px;
+  left: 147px;
+}
+.border-containers-pro {
+  background-color: white;
+  width: 200px;
+  height: 1px;
+  border: 3px solid white;
+  border-radius: 5px;
+  position: relative;
+  top: 5px;
+  left: 126px;
+}
+.skills-label-show-container {
+  top: 50px;
+  position: relative;
+  width: 100%;
+  height: 400px;
+}
+.skills-label-show-box-container {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.skills-label-box-container {
+  width: 150px;
+  height: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin: 50px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.skills-label-box{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.percentage-show {
+  color: white;
+  font-size: 15px;
+  font-weight: 800;
+}
+.skills-label-show-box {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 7px solid rgb(0, 255, 204);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ border-top-color:black;
+   
+}
+.name-skills {
+  margin-top: 10px;
+  color: white;
+  font-weight: 600;
+  text-align: center;
+}
+
+
+ 

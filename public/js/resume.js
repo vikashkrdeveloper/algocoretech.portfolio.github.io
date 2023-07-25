@@ -6,7 +6,7 @@ year.innerHTML = date.getFullYear();
 //header properties
  
 let logoText=document.getElementById('sign-name');
-let logourl="https://vikashkrdeveloper.github.io/portfolio.github.io/";
+let logourl="https://vikashkrdeveloper.github.io/algocoretech.portfolio.github.io/";
  
 logoText.addEventListener('click',()=>{
     window.location.assign(logourl);
@@ -18,7 +18,7 @@ let projects = document.getElementById('project');
 let education = document.getElementById('education');
 let contact = document.getElementById('contact');
 const assignurl=()=>{
-    let url="/";
+    let url="https://vikashkrdeveloper.github.io/algocoretech.portfolio.github.io/";
     window.location.assign('/');
 
 

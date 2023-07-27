@@ -10,7 +10,7 @@
 }
 .about-main-details-container {
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 .about-main-first-container {
   width: 50%;
@@ -21,16 +21,19 @@
 }
 .about-main-all-container {
   width: 100%;
-  height: 700px;
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .about-main-second-container {
   width: 50%;
-  height: 700px;
+  height: auto;
   display: flex;
   align-items: center;
+}
+.bottom-container {
+  margin-bottom: 40px;
 }
 .about-main-heading-container {
   width: 100%;
@@ -55,13 +58,16 @@
 .about-main-second {
   width: 90%;
   height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .heading {
   margin-bottom: 10px;
   color: rgb(255, 255, 255);
   opacity: 0;
-  transition: .8s;
-  animation: slideright .8s ease forwards;
+  transition: 0.8s;
+  animation: slideright 0.8s ease forwards;
 }
 .about-main-text {
   width: 100%;
@@ -71,8 +77,12 @@
   color: rgb(255, 251, 0);
   margin-bottom: 20px;
   opacity: 0;
-  transition: .8s;
-  animation: slideright .8s ease forwards;
+  transition: 0.8s;
+  animation: slideright 0.8s ease forwards;
+}
+.about-main-box {
+  width: 100%;
+  height: 100%;
 }
 .about-main-text-paragraph {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -80,11 +90,11 @@
   color: rgb(255, 255, 255);
   margin-bottom: 20px;
   width: 100%;
-  height: 200px;
+  height: auto;
   border-bottom: 20px;
   opacity: 0;
-  transition: .8s;
-  animation: slideright .8s ease forwards;
+  transition: 0.8s;
+  animation: slideright 0.8s ease forwards;
 }
 .about-main-second-email-container {
   width: 100%;
@@ -98,8 +108,8 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   cursor: default;
   opacity: 0;
-  transition: .8s;
-  animation: slideright .8s ease forwards;
+  transition: 0.8s;
+  animation: slideright 0.8s ease forwards;
 }
 .email-attributes {
   color: rgb(255, 255, 255);
@@ -136,8 +146,8 @@
   justify-content: center;
   cursor: pointer;
   opacity: 0;
-  transition: .8s;
-  animation: slideright .8s ease forwards;
+  transition: 0.8s;
+  animation: slideright 0.8s ease forwards;
 }
 .resume-button-icon {
   margin-left: 5px;
@@ -151,31 +161,53 @@
   border: 5px solid rgb(157, 255, 0);
   border-style: groove;
   opacity: 0;
-  transition: .8s;
-  animation: slideleft .8s ease forwards;
+  transition: 0.8s;
+  animation: slideleft 0.8s ease forwards;
 }
 
- 
- 
-@keyframes slideleft{
-    0%{
-        opacity: 0;
-        transform: translate(-100%);
-
-    }
-    100%{
-        opacity: 1;
-        transform: translate(0);
-    }
+@keyframes slideleft {
+  0% {
+    opacity: 0;
+    transform: translate(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
 }
-@keyframes slideright{
-    0%{
-        opacity: 0;
-        transform: translate(100px);
+@keyframes slideright {
+  0% {
+    opacity: 0;
+    transform: translate(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
 
-    }
-    100%{
-        opacity: 1;
-        transform: translate(0);
-    }
+@media (max-width: 800px) {
+  .about-main-all-container {
+    display: block;
+  }
+
+  .about-main-first-container,
+  .about-main-image-container {
+    display: none;
+  }
+  .about-main-second-container {
+    width: 100%;
+    height: auto;
+  }
+  .about-main-box {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    width: 85%;
+  }
+  .heading {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+  }
 }

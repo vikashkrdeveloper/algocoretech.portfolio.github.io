@@ -5,7 +5,7 @@
 }
 .skill-main-details-container {
   width: 100%;
-  height: 100%;
+  height: auto;
   background: linear-gradient(
     200deg,
     rgb(43, 68, 50),
@@ -46,11 +46,15 @@
   color: rgb(255, 204, 0);
 }
 
+.skills-technical-show-box-container {
+  width: 100%;
+  height: auto;
+}
 .all-skills-container {
   width: 100%;
-  height: 160vh;
+  height: auto;
   display: flex;
-  align-items: center;
+  justify-content: center;
 }
 
 .technical-skills-container {
@@ -70,40 +74,56 @@
 .technical-skills-box {
   width: 60%;
   height: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.technical-skills {
+  width: 100%;
+  height: auto;
 }
 
 .technical-skills-box-heading-container {
   width: 100%;
   height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.skills-technical-show-container{
-  position: relative;
+.technical-skills-box-heading{
+  width: 200px;
+  height: auto;
+}
+.professional-skills{
+  width: 210px;
+  height: auto;
+}
+.skills-technical-show-container {
   width: 100%;
-  height:auto;
+  height: auto;
   top: 50px;
 }
 
-.skills-technical-box-container{
+.skills-technical-box-container {
   width: 100%;
   height: 60px;
   margin-top: 10px;
 }
 .skill-image {
   width: 100%;
-  height:auto;
-
+  height: auto;
 }
-.skill-name-image-con{
+.skill-name-image-con {
   margin-top: 3px;
   width: 100%;
   height: auto;
 }
-.skill-name-image{
-   font-size: 10px;
-   font-weight: 600;
-   color: white;
+.skill-name-image {
+  font-size: 10px;
+  font-weight: 600;
+  color: white;
 }
-.skill-gane-percentage{
+.skill-gane-percentage {
   margin-top: 8px;
   width: 100%;
   height: 7px;
@@ -111,23 +131,23 @@
   border-radius: 5px;
 }
 
-.skill-gane-outer-percentage{
+.skill-gane-outer-percentage {
   position: relative;
   bottom: 8px;
   width: 90%;
-   border: 4px solid rgb(0, 255, 204);
+  border: 4px solid rgb(0, 255, 204);
   border-radius: 5px;
 }
-.skill-gane-outer-css-percentage{
+.skill-gane-outer-css-percentage {
   position: relative;
   bottom: 8px;
   width: 60%;
-   border: 4px solid rgb(0, 255, 204);
+  border: 4px solid rgb(0, 255, 204);
   border-radius: 5px;
 }
-.percentage-show-container-text{
+.percentage-show-container-text {
   bottom: 40px;
-  left:380px;
+  left: 90%;
   position: relative;
   width: 40px;
   height: 20px;
@@ -140,49 +160,42 @@
   color: white;
   border-radius: 5px;
 }
- .css-percentage{
-  left:250px;
-
- }
-
-.js-border{
-  width: 85%;
-
+.css-percentage {
+  left: 50%;
 }
-.node-border{
-  width: 80%;
 
-}
-.react-border{
+.js-border {
   width: 75%;
-
 }
-.git-border{
+.node-border {
+  width: 70%;
+}
+.react-border {
   width: 65%;
-
 }
-.js-percentage{
-  left:360px;
-
- }
-.node-percentage{
-  left:340px;
-
- }
-.react-percentage{
-  left:320px;
-
- }
-.git-percentage{
-  left:270px;
-
- }
-
-
+.git-border {
+  width: 55%;
+}
+.js-percentage {
+  left: 75%;
+}
+.node-percentage {
+  left: 70%;
+}
+.react-percentage {
+  left: 65%;
+}
+.git-percentage {
+  left: 55%;
+}
 
 .skills-name-heading {
-  text-align: center;
+  position: relative;
+  left: 28%;
   color: white;
+}
+.technical {
+  left: 31%;
 }
 .border-containers {
   background-color: white;
@@ -192,7 +205,7 @@
   border-radius: 5px;
   position: relative;
   top: 5px;
-  left: 147px;
+  left: 32%;
 }
 .border-containers-pro {
   background-color: white;
@@ -202,7 +215,7 @@
   border-radius: 5px;
   position: relative;
   top: 5px;
-  left: 126px;
+  left: 28%;
 }
 .skills-label-show-container {
   top: 50px;
@@ -226,7 +239,7 @@
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.skills-label-box{
+.skills-label-box {
   width: 100%;
   height: 100%;
   display: flex;
@@ -246,15 +259,63 @@
   display: flex;
   align-items: center;
   justify-content: center;
- border-top-color:black;
-   
+  border-top-color: black;
 }
 .name-skills {
+  width: 100%;
   margin-top: 10px;
   color: white;
   font-weight: 600;
   text-align: center;
 }
 
-
- 
+@media (max-width: 1300px) {
+  .skills-label-box-container {
+    margin: 30px;
+  }
+  .border-containers-pro,
+  .skills-name-heading {
+    left: 20%;
+  }
+  .border-containers {
+    left: 20%;
+  }
+}
+@media (max-width: 800px) {
+  .all-skills-container {
+    display: block;
+  }
+  .technical-skills-container{
+    width: 100%;
+    height: auto;
+  }
+  .technical-skills-box{
+    width: 80%;
+    height: auto;
+  }
+  .technical-skills{
+    width: 80%;
+    height: auto;
+  }
+  .professional-skills-container{
+    width: 100%;
+    height: auto;
+  }
+  .border-containers{
+    left: 0%;
+  }
+  .skills-name-heading {
+    left: 0%;
+  }
+  .border-containers-pro{
+    left: 0%;
+  }
+}
+@media (max-width: 480px) {
+  .skill-main-heading{
+    font-size: 25px;
+  }
+  .skill-main-heading-icon{
+    font-size: 20px;
+  }
+}

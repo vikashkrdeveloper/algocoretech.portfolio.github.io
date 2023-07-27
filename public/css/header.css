@@ -27,9 +27,9 @@
   cursor: pointer;
   position: relative;
   color: white;
-  transition: .8s;
+  transition: 0.8s;
   opacity: 0;
-  animation: slidetop .8s ease forwards;
+  animation: slidetop 0.8s ease forwards;
 }
 
 .nav-bar-container {
@@ -57,8 +57,7 @@
   cursor: pointer;
   opacity: 1;
   transition: 0.4s;
-  animation: navslidetop .8s ease forwards;
-
+  animation: navslidetop 0.8s ease forwards;
 }
 .last-container {
   margin-right: 30px;
@@ -68,6 +67,21 @@
   font-size: 17px;
   font-weight: 600;
   color: rgb(255, 255, 255);
+}
+
+.label-box {
+  width: 40px;
+  height: 40px;
+  display: none;
+}
+#check {
+  display: none;
+}
+
+.font-dot {
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
 }
 
 @keyframes slidetop {
@@ -81,13 +95,69 @@
   }
 }
 
-@keyframes navslidetop{
-  0%{
+@keyframes navslidetop {
+  0% {
     transform: translatey(-100px);
     opacity: 0;
   }
   100% {
     transform: translatey(0px);
     opacity: 1;
+  }
+}
+
+
+@media (max-width: 1000px) {
+  .name-container {
+    width: 250px;
+  }
+}
+@media (max-width: 850px) {
+  .label-box {
+    margin-right: 20px;
+    display: block;
+  }
+  
+  .nav-bar-container{
+    justify-content: flex-end;
+  }
+  .ul-bar-container {
+    background: linear-gradient(
+      20deg,
+      rgb(91, 153, 105),
+      rgb(125, 58, 188),
+      rgb(141, 74, 74)
+    );
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 60px;
+    left:-100%;
+    transition: all 0.5s;
+    display: block;
+  
+  }
+   
+  .list-items-container {
+    width: 100%;
+    height: 40px;
+  }
+  #home {
+    margin-top: 50px;
+  }
+  #check:checked ~ ul {
+
+  }
+   
+}
+
+@media (max-width:480px)
+{
+    
+  .sign-name{
+font-size: 25px;
+  }
+  .font-dot{
+    font-size: 25px;
   }
 }

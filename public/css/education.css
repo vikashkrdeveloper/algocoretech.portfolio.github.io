@@ -32,7 +32,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 20px;
+    height: auto;
   }
   .education-main-paragraph-heading {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -43,7 +43,7 @@
   }
   .education-main-show-container {
     width: auto;
-    height: 550px;
+    height: auto;
   
     background:linear-gradient(150deg,rgb(35, 56, 40),rgb(50, 35, 61),rgb(56, 69, 93));
     border-radius: 10px;
@@ -67,10 +67,11 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    margin-top: 30px;
   }
   .education-main-second-container {
     background:linear-gradient(200deg,rgb(59, 119, 72),rgb(68, 36, 65),rgb(73, 97, 144));
-    height: 150px;
+    height: auto;
     width: 100%;
     transition: transform 1.5s;
     margin-bottom: 20px;
@@ -82,7 +83,7 @@
   }
   .education-main-third-container {
     background:linear-gradient(200deg,rgb(59, 119, 72),rgb(68, 36, 65),rgb(73, 97, 144));
-    height: 150px;
+    height: auto;
     width: 100%;
     transition: transform 1.5s;
     border-radius: 10px;
@@ -115,7 +116,7 @@
   
   .education-main-image-container {
     background:linear-gradient(200deg,rgb(119, 115, 59),rgb(36, 66, 68),rgb(73, 97, 144));
-    height: 100%;
+    height: 150px;
     width: 200px;
     border-radius: 10px 0 0 10px;
     display: flex;
@@ -138,7 +139,8 @@
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     font-size: 22px;
     width: 100%;
-    height: 60px;
+    height: auto;
+    margin-top: 10px;
     display: flex;
     align-items: center;
     color: rgb(204, 255, 0);
@@ -146,10 +148,11 @@
   .education-maincollagename {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     width: 100%;
-    height: 20px;
+    height: auto;
     display: flex;
     align-items: center;
     color: rgb(255, 162, 0);
+    margin-top: 10px;
   }
   .education-maincollageyear {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -159,4 +162,44 @@
     align-items: center;
     color: rgb(0, 255, 0);
     font-weight: 700;
+  }
+.first-college-name{
+  margin-top:50px;
+}
+.last-college-name{
+  margin-bottom: 50px;
+}
+
+  @media (max-width:1400px){
+    .education-main-first-container {
+      height: 180px;
+    }
+  }
+  @media (max-width:950px){
+    .education-main-first-container {
+      height: 200px;
+    }
+    .education-main-show-box-container{
+      width:90%;
+
+    }
+    .education-main-image-container{
+      width: 150px;
+      height: 150px;
+    }
+    
+  }
+  @media (max-width:850px){
+    .education-main-first-container{
+      height: auto;
+    }
+    .education-main-paragraph-heading-container{
+      display: none;
+    }
+  }
+  @media (max-width:480px){
+    .education-main-heading,  .educationicon{
+      font-size: 25px;
+    }
+  
   }

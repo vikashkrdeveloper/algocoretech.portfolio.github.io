@@ -92,23 +92,23 @@ function aboutfun() {
 function skillsfun() {
     noneproperties();
     skillsapllyproperties();
-    window.scroll(0, 1390);
+    window.scroll(0, 1410);
 }
 function projectsfun() {
     noneproperties();
     projectsapllyproperties();
-    window.scroll(0, 3280);
+    window.scroll(0, 3150);
 }
 
 function educationfun() {
     noneproperties();
     educationapllyproperties();
-    window.scroll(0, 2630);
+    window.scroll(0, 2490);
 }
 function contactfun() {
     noneproperties();
     contactapllyproperties();
-    window.scroll(0, 3960);
+    window.scroll(0, 3610);
 }
 home.addEventListener('click', () => {
     homefun();
@@ -167,6 +167,20 @@ buttonabout.addEventListener('click', () => {
     aboutfun();
 })
 
+const reloadanimation = () => {
+    let animation = document.getElementById('realoadanimation');
+    animation.style.display = "none"
+}
+
+//header nav bar properties
+
+let font_btn = document.getElementById('font-btn');
+let ul_bar = document.getElementById('ul-bar');
+font_btn.addEventListener('click', () => {
+    ul_bar.style.left = "0"
 
 
-
+})
+font_btn.addEventListener('dblclick', () => {
+    ul_bar.style.left = "-100%"
+})

@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="./public/css/home.css">
     <link rel="stylesheet" href="./public/css/about.css">
     <link rel="stylesheet" href="./public/css/skills.css">
@@ -21,18 +23,27 @@
     <link rel="stylesheet" href="./public/css/project.css">
     <link rel="stylesheet" href="./public/css/contact.css">
     <link rel="stylesheet" href="./public/css/alertbox.css">
+    <link rel="stylesheet" href="./public/css/reload.css">
 </head>
 
-<body>
-    <header class="header-container">
+<body onload="reloadanimation()">
+    <div class="realod-container" id="realoadanimation">
+        <div class="animation-loading">
+            <div class="rotate-reload-nimation">
+
+            </div>
+        </div>
+    </div>
+    <header class="header-container" >
+
         <div class="name-container">
             <h1 class="sign-name" id="sign-name">@Vikash kumar</h1>
         </div>
         <nav class="nav-bar-container">
-            <ul class="ul-bar-container">
-                <li class="list-items-container" id="home">
+            <ul class="ul-bar-container" id="ul-bar">
+                <li class="list-items-container " id="home">
 
-                    <p class="link-texts">Home</p>
+                    <p class="link-texts ">Home</p>
 
                 </li>
                 <li class="list-items-container" id="about">
@@ -61,7 +72,12 @@
 
                 </li>
             </ul>
+            <input type="checkbox" name="check" id="check">
+            <label for="check" class="label-box"><i class="fi-xnsuxl-three-bars-solid font-dot" id="font-btn"></i></label>
         </nav>
+
+
+
     </header>
 
     <div class="message-box-container" id="alertbox">
@@ -83,36 +99,49 @@
         <div class="main-details-container">
             <div class="main-first-container">
                 <div class="containerfirst-introduction">
-                    <h1 class="first-main-container-heading1">Hello, It's Me</h1>
-                    <h1 class="first-main-container-heading">Vikash Kumar</h1>
-                    <p class="first-main-container-tex-container"><span class="first-main-container-text-vikash">And I'm
-                            a </span><span class="first-main-container-text auto-type"></span></p>
-                    <p class="first-main-container-tex-container"><span
-                            class="first-main-container-text-vikash-details">I'm From Madhubani (Bihar). I am first year
-                            student of Bihar Engineering University Patna B.Tech CSE (IOT) branch. My hobby is coding. I
-                            am a fresher and I have made a good pucker on 10 programming languages ​Like React, Java,
-                            Javascript, HTML, CSS, Nodejs Expressjs, C, PHP, Python ​And database in SQL or NO SQL Like
-                            Mongodb or My SQL so many programming languages And we can do something in that programming
-                            language And if I don't know anything then I will try to learn it and I will increase
-                            my skill. Thank you for visiting my portfolio website. Feel free to reach out to me for any
-                            inquiries or collaboration opportunities.</span></p>
-                    <div class="button-container">
-                        <button class="btn-about" id="btn-about">About Me <i
-                                class="fi-cnsuxl-download btn-about-icon"></i></button>
-                    </div>
+                    <div class="containerfirst">
 
-                    <div class="contact-list-container">
-                        <p class="contact-info-icon-container "><a
-                                href="https://www.linkedin.com/in/vikash-kumar-8467b0253/" target="_blank"
-                                class="linkdetals "><i class="fi-cnsuxl-linkedin  linkedin"></i></a></p>
-                        <p class="contact-info-icon-container"><a href="https://github.com/vikashcod" target="_blank"
-                                class="linkdetals"><i class="fi-xnsuxl-github  github"></i></a></p>
-                        <p class="contact-info-icon-container"><a href="mailto: vikashjjp728@gmail.com" target="_blank"
-                                class="linkdetals"><i class="fi-xwsuxl-envelope-solid mailbox "></i></a></p>
-                        <p class="contact-info-icon-container"><a href="https://twitter.com/vikash2696v" target="_blank"
-                                class="linkdetals"><i class="fi-xnsuxl-twitter-solid  twiter"></i></a></p>
-                        <p class="contact-info-icon-container"><a href="https://web.telegram.org/k/#-623765924"
-                                target="_blank" class="linkdetals"><i class="fi-xnsuxl-telegram  telegram"></i></a></p>
+                        <h1 class="first-main-container-heading1">Hello, It's Me</h1>
+                        <h1 class="first-main-container-heading">Vikash Kumar</h1>
+                        <p class="first-main-container-tex-container"><span class="first-main-container-text-vikash">And
+                                I'm
+                                a </span><span class="first-main-container-text auto-type"></span></p>
+                        <p class="first-main-container-tex-container"><span
+                                class="first-main-container-text-vikash-details">I'm From Madhubani (Bihar). I am first
+                                year
+                                student of Bihar Engineering University Patna B.Tech CSE (IOT) branch. My hobby is
+                                coding. I
+                                am a fresher and I have made a good pucker on 10 programming languages ​Like React,
+                                Java,
+                                Javascript, HTML, CSS, Nodejs Expressjs, C, PHP, Python ​And database in SQL or NO SQL
+                                Like
+                                Mongodb or My SQL so many programming languages And we can do something in that
+                                programming
+                                language And if I don't know anything then I will try to learn it and I will increase
+                                my skill. Thank you for visiting my portfolio website. Feel free to reach out to me for
+                                any
+                                inquiries or collaboration opportunities.</span></p>
+                        <div class="button-container">
+                            <button class="btn-about" id="btn-about">About Me <i
+                                    class="fi-cnsuxl-download btn-about-icon"></i></button>
+                        </div>
+
+                        <div class="contact-list-container">
+                            <p class="contact-info-icon-container "><a
+                                    href="https://www.linkedin.com/in/vikash-kumar-8467b0253/" target="_blank"
+                                    class="linkdetals "><i class="fi-cnsuxl-linkedin  linkedin"></i></a></p>
+                            <p class="contact-info-icon-container"><a href="https://github.com/vikashcod"
+                                    target="_blank" class="linkdetals"><i class="fi-xnsuxl-github  github"></i></a></p>
+                            <p class="contact-info-icon-container"><a href="mailto: vikashjjp728@gmail.com"
+                                    target="_blank" class="linkdetals"><i
+                                        class="fi-xwsuxl-envelope-solid mailbox "></i></a></p>
+                            <p class="contact-info-icon-container"><a href="https://twitter.com/vikash2696v"
+                                    target="_blank" class="linkdetals"><i
+                                        class="fi-xnsuxl-twitter-solid  twiter"></i></a></p>
+                            <p class="contact-info-icon-container"><a href="https://web.telegram.org/k/#-623765924"
+                                    target="_blank" class="linkdetals"><i class="fi-xnsuxl-telegram  telegram"></i></a>
+                            </p>
+                        </div>
                     </div>
 
                 </div>
@@ -123,13 +152,13 @@
             <div class="main-second-container">
                 <div class="img-right-my-container">
                     <img class="my-image" src="./public/images/1689520523040(v).jpg" alt="">
-                    <div class="rotate-border">
+                    <div class="rotates-border">
 
+                    </div>
                 </div>
+
+
             </div>
-
-
-        </div>
 
 
     </main>
@@ -152,32 +181,40 @@
                 </div>
                 <div class="about-main-second-container ">
                     <div class="about-main-second">
-                        <h1 class="first-main-container-heading heading">I,m Vikash kumar</h1>
-                        <p class="about-main-text">Full Stack Developer</p>
-                        <p class="about-main-text-paragraph">I am a Full-Stack developer based in Madubani(Bihar),
-                            India. I am an Information Technology B.Tech First year student from Aryabhatta Knowledge
-                            University patna (Bihar) . I am very passionate about improving my coding skills &
-                            developing applications & websites. I build WebApps and Websites using MERN Stack. Working
-                            for myself to improve my skills. Love to build Full-Stack clones. I am Freshar, a passionate
-                            full-stack developer with a strong foundation in web development. I have a deep
-                            understanding of front-end and back-end technologies and enjoy creating seamless,
-                            user-friendly experiences. My curiosity and dedication drive me to continually learn and
-                            improve my skills in order to stay up-to-date with the latest industry trends.</p>
-                        <div class="about-main-second-email-container">
-                            <p class="about-main-text-two">Email : <span><a href="mailto: vikashjjp728@gmail.com"
-                                        class="attributes email-attributes">vikashjjp728@gmail.com</a></span> </p>
+                        <div class="about-main-box">
+
+                            <h1 class="first-main-container-heading heading">I,m Vikash kumar</h1>
+                            <p class="about-main-text">Full Stack Developer</p>
+                            <p class="about-main-text-paragraph">I am a Full-Stack developer based in Madubani(Bihar),
+                                India. I am an Information Technology B.Tech First year student from Aryabhatta
+                                Knowledge
+                                University patna (Bihar) . I am very passionate about improving my coding skills &
+                                developing applications & websites. I build WebApps and Websites using MERN Stack.
+                                Working
+                                for myself to improve my skills. Love to build Full-Stack clones. I am Freshar, a
+                                passionate
+                                full-stack developer with a strong foundation in web development. I have a deep
+                                understanding of front-end and back-end technologies and enjoy creating seamless,
+                                user-friendly experiences. My curiosity and dedication drive me to continually learn and
+                                improve my skills in order to stay up-to-date with the latest industry trends.</p>
+                            <div class="about-main-second-email-container">
+                                <p class="about-main-text-two">Email : <span><a href="mailto: vikashjjp728@gmail.com"
+                                            class="attributes email-attributes">vikashjjp728@gmail.com</a></span> </p>
+                            </div>
+
+                            <div class="about-main-second-place-container">
+                                <p class="about-main-text-two">Place : <span class="place-text">Madhubani (Bihar), India
+                                        -
+                                        847410</span> </p>
+                            </div>
+
+
+                            <div class="about-main-second-resume-container">
+                                <button class="resume-button" id="resume">Resume <span
+                                        class="resume-button-icon">&#8250;</span></button>
+                            </div>
                         </div>
 
-                        <div class="about-main-second-place-container">
-                            <p class="about-main-text-two">Place : <span class="place-text">Madhubani (Bihar), India -
-                                    847410</span> </p>
-                        </div>
-
-
-                        <div class="about-main-second-resume-container">
-                            <button class="resume-button" id="resume">Resume <span
-                                    class="resume-button-icon">&#8250;</span></button>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -198,167 +235,178 @@
             <div class="all-skills-container">
                 <div class="technical-skills-container">
                     <div class="technical-skills-box">
-                        <div class="technical-skills-box-heading-container">
-                            <h2 class="skills-name-heading">Technical Skills</h2>
-                            <div class="border-containers"></div>
-                        </div>
-                        <div class="skills-technical-show-container">
-                            <div class="skills-technical-show-box-container">
-                                <div class="skills-technical-box-container">
-                                    <div class="skill-image">
-                                        <img style="width: 20px; height: 20px;" src="./public/images/HTML5.png" alt="">
-                                    </div>
-                                    <div class="skill-name-image-con">
-                                        <p class="skill-name-image">HTML</p>
-                                    </div>
-                                    <div class="skill-gane-percentage"></div>
-                                    <div class="skill-gane-outer-percentage"></div>
-                                    <div class="percentage-show-container-text">90%</div>
+                        <div class="technical-skills">
+
+                            <div class="technical-skills-box-heading-container">/
+                                <div class="technical-skills-box-heading">
+                                    <h2 class="skills-name-heading technical">Technical Skills</h2>
+                                    <div class="border-containers"></div>
                                 </div>
 
-                                <div class="skills-technical-box-container">
-                                    <div class="skill-image">
-                                        <img style="width: 20px; height: 20px;" src="./public/images/CSS3.png" alt="">
+                            </div>
+                            <div class="skills-technical-show-container">
+                                <div class="skills-technical-show-box-container">
+                                    <div class="skills-technical-box-container">
+                                        <div class="skill-image">
+                                            <img style="width: 20px; height: 20px;" src="./public/images/HTML5.png"
+                                                alt="">
+                                        </div>
+                                        <div class="skill-name-image-con">
+                                            <p class="skill-name-image">HTML</p>
+                                        </div>
+                                        <div class="skill-gane-percentage"></div>
+                                        <div class="skill-gane-outer-percentage"></div>
+                                        <div class="percentage-show-container-text">90%</div>
                                     </div>
-                                    <div class="skill-name-image-con">
-                                        <p class="skill-name-image">CSS</p>
+
+                                    <div class="skills-technical-box-container">
+                                        <div class="skill-image">
+                                            <img style="width: 20px; height: 20px;" src="./public/images/CSS3.png"
+                                                alt="">
+                                        </div>
+                                        <div class="skill-name-image-con">
+                                            <p class="skill-name-image">CSS</p>
+                                        </div>
+                                        <div class="skill-gane-percentage"></div>
+                                        <div class="skill-gane-outer-css-percentage"></div>
+                                        <div class="percentage-show-container-text css-percentage">60%</div>
                                     </div>
-                                    <div class="skill-gane-percentage"></div>
-                                    <div class="skill-gane-outer-css-percentage"></div>
-                                    <div class="percentage-show-container-text css-percentage">60%</div>
-                                </div>
-                                <div class="skills-technical-box-container">
-                                    <div class="skill-image">
-                                        <img style="width: 20px; height: 20px;"
-                                            src="./public/images/JavaScript-logo.png" alt="">
+                                    <div class="skills-technical-box-container">
+                                        <div class="skill-image">
+                                            <img style="width: 20px; height: 20px;"
+                                                src="./public/images/JavaScript-logo.png" alt="">
+                                        </div>
+                                        <div class="skill-name-image-con">
+                                            <p class="skill-name-image">JS</p>
+                                        </div>
+                                        <div class="skill-gane-percentage"></div>
+                                        <div class="skill-gane-outer-css-percentage js-border"></div>
+                                        <div class="percentage-show-container-text js-percentage">85%</div>
                                     </div>
-                                    <div class="skill-name-image-con">
-                                        <p class="skill-name-image">JS</p>
+                                    <div class="skills-technical-box-container">
+                                        <div class="skill-image">
+                                            <img style="width: 50px; height: 20px;" src="./public/images/nodejs.png"
+                                                alt="">
+                                        </div>
+                                        <div class="skill-name-image-con">
+                                            <p class="skill-name-image">NODEJS</p>
+                                        </div>
+                                        <div class="skill-gane-percentage"></div>
+                                        <div class="skill-gane-outer-css-percentage node-border"></div>
+                                        <div class="percentage-show-container-text node-percentage">80%</div>
                                     </div>
-                                    <div class="skill-gane-percentage"></div>
-                                    <div class="skill-gane-outer-css-percentage js-border"></div>
-                                    <div class="percentage-show-container-text js-percentage">85%</div>
-                                </div>
-                                <div class="skills-technical-box-container">
-                                    <div class="skill-image">
-                                        <img style="width: 50px; height: 20px;" src="./public/images/nodejs.png" alt="">
+                                    <div class="skills-technical-box-container">
+                                        <div class="skill-image">
+                                            <img style="width: 50px; height: 20px; filter: invert(97%) sepia(100%) saturate(13%) hue-rotate(235deg) brightness(102%) contrast(105%);"
+                                                src="./public/images/Expressjs.png" alt="">
+                                        </div>
+                                        <div class="skill-name-image-con">
+                                            <p class="skill-name-image">EXPRESSJS</p>
+                                        </div>
+                                        <div class="skill-gane-percentage"></div>
+                                        <div class="skill-gane-outer-css-percentage js-border"></div>
+                                        <div class="percentage-show-container-text js-percentage">85%</div>
                                     </div>
-                                    <div class="skill-name-image-con">
-                                        <p class="skill-name-image">NODEJS</p>
+                                    <div class="skills-technical-box-container">
+                                        <div class="skill-image">
+                                            <img style="width: 30px; height: 25px; "
+                                                src="./public/images/Java_programming_language_logo.svg.png" alt="">
+                                        </div>
+                                        <div class="skill-name-image-con">
+                                            <p class="skill-name-image">JAVA</p>
+                                        </div>
+                                        <div class="skill-gane-percentage"></div>
+                                        <div class="skill-gane-outer-css-percentage react-border"></div>
+                                        <div class="percentage-show-container-text react-percentage">75%</div>
                                     </div>
-                                    <div class="skill-gane-percentage"></div>
-                                    <div class="skill-gane-outer-css-percentage node-border"></div>
-                                    <div class="percentage-show-container-text node-percentage">80%</div>
-                                </div>
-                                <div class="skills-technical-box-container">
-                                    <div class="skill-image">
-                                        <img style="width: 50px; height: 20px; filter: invert(97%) sepia(100%) saturate(13%) hue-rotate(235deg) brightness(102%) contrast(105%);"
-                                            src="./public/images/Expressjs.png" alt="">
+                                    <div class="skills-technical-box-container">
+                                        <div class="skill-image">
+                                            <img style="width: 30px; height: 25px; "
+                                                src="./public/images/React-icon.svg.png" alt="">
+                                        </div>
+                                        <div class="skill-name-image-con">
+                                            <p class="skill-name-image">React</p>
+                                        </div>
+                                        <div class="skill-gane-percentage"></div>
+                                        <div class="skill-gane-outer-css-percentage react-border"></div>
+                                        <div class="percentage-show-container-text react-percentage">75%</div>
                                     </div>
-                                    <div class="skill-name-image-con">
-                                        <p class="skill-name-image">EXPRESSJS</p>
+                                    <div class="skills-technical-box-container">
+                                        <div class="skill-image">
+                                            <img style="width: 40px; height: 20px; color:white"
+                                                src="./public/images/PHP-logo.svg.png" alt="">
+                                        </div>
+                                        <div class="skill-name-image-con">
+                                            <p class="skill-name-image">PHP</p>
+                                        </div>
+                                        <div class="skill-gane-percentage"></div>
+                                        <div class="skill-gane-outer-css-percentage node-border"></div>
+                                        <div class="percentage-show-container-text node-percentage">80%</div>
                                     </div>
-                                    <div class="skill-gane-percentage"></div>
-                                    <div class="skill-gane-outer-css-percentage js-border"></div>
-                                    <div class="percentage-show-container-text js-percentage">85%</div>
-                                </div>
-                                <div class="skills-technical-box-container">
-                                    <div class="skill-image">
-                                        <img style="width: 30px; height: 25px; "
-                                            src="./public/images/Java_programming_language_logo.svg.png" alt="">
+                                    <div class="skills-technical-box-container">
+                                        <div class="skill-image">
+                                            <img style="width: 80px; height: 20px; color:white"
+                                                src="./public/images/mongodb.png" alt="">
+                                        </div>
+                                        <div class="skill-name-image-con">
+                                            <p class="skill-name-image">MONGODB</p>
+                                        </div>
+                                        <div class="skill-gane-percentage"></div>
+                                        <div class="skill-gane-outer-css-percentage js-border"></div>
+                                        <div class="percentage-show-container-text js-percentage">85%</div>
                                     </div>
-                                    <div class="skill-name-image-con">
-                                        <p class="skill-name-image">JAVA</p>
+                                    <div class="skills-technical-box-container">
+                                        <div class="skill-image">
+                                            <img style="width: 50px; height: 20px; color:white"
+                                                src="./public/images/mysql.png" alt="">
+                                        </div>
+                                        <div class="skill-name-image-con">
+                                            <p class="skill-name-image">MYSQL</p>
+                                        </div>
+                                        <div class="skill-gane-percentage"></div>
+                                        <div class="skill-gane-outer-css-percentage node-border"></div>
+                                        <div class="percentage-show-container-text node-percentage">80%</div>
                                     </div>
-                                    <div class="skill-gane-percentage"></div>
-                                    <div class="skill-gane-outer-css-percentage react-border"></div>
-                                    <div class="percentage-show-container-text react-percentage">75%</div>
-                                </div>
-                                <div class="skills-technical-box-container">
-                                    <div class="skill-image">
-                                        <img style="width: 30px; height: 25px; "
-                                            src="./public/images/React-icon.svg.png" alt="">
+                                    <div class="skills-technical-box-container">
+                                        <div class="skill-image">
+                                            <img style="width: 30px; height: 20px; color:white"
+                                                src="./public/images/The_C_Programming_Language_logo.svg.png" alt="">
+                                        </div>
+                                        <div class="skill-name-image-con">
+                                            <p class="skill-name-image">C</p>
+                                        </div>
+                                        <div class="skill-gane-percentage"></div>
+                                        <div class="skill-gane-outer-css-percentage js-border"></div>
+                                        <div class="percentage-show-container-text js-percentage">85%</div>
                                     </div>
-                                    <div class="skill-name-image-con">
-                                        <p class="skill-name-image">React</p>
+                                    <div class="skills-technical-box-container">
+                                        <div class="skill-image">
+                                            <img style="width: 30px; height: 20px; color:white"
+                                                src="./public/images/github.png" alt="">
+                                        </div>
+                                        <div class="skill-name-image-con">
+                                            <p class="skill-name-image">GITHUB</p>
+                                        </div>
+                                        <div class="skill-gane-percentage"></div>
+                                        <div class="skill-gane-outer-css-percentage node-border"></div>
+                                        <div class="percentage-show-container-text node-percentage">80%</div>
                                     </div>
-                                    <div class="skill-gane-percentage"></div>
-                                    <div class="skill-gane-outer-css-percentage react-border"></div>
-                                    <div class="percentage-show-container-text react-percentage">75%</div>
-                                </div>
-                                <div class="skills-technical-box-container">
-                                    <div class="skill-image">
-                                        <img style="width: 40px; height: 20px; color:white"
-                                            src="./public/images/PHP-logo.svg.png" alt="">
+                                    <div class="skills-technical-box-container bottom-container">
+                                        <div class="skill-image">
+                                            <img style="width: 60px; height: 20px; color:white"
+                                                src="./public/images/Git-logo.svg.png" alt="">
+                                        </div>
+                                        <div class="skill-name-image-con">
+                                            <p class="skill-name-image">GIT</p>
+                                        </div>
+                                        <div class="skill-gane-percentage"></div>
+                                        <div class="skill-gane-outer-css-percentage git-border"></div>
+                                        <div class="percentage-show-container-text git-percentage">65%</div>
                                     </div>
-                                    <div class="skill-name-image-con">
-                                        <p class="skill-name-image">PHP</p>
-                                    </div>
-                                    <div class="skill-gane-percentage"></div>
-                                    <div class="skill-gane-outer-css-percentage node-border"></div>
-                                    <div class="percentage-show-container-text node-percentage">80%</div>
-                                </div>
-                                <div class="skills-technical-box-container">
-                                    <div class="skill-image">
-                                        <img style="width: 80px; height: 20px; color:white"
-                                            src="./public/images/mongodb.png" alt="">
-                                    </div>
-                                    <div class="skill-name-image-con">
-                                        <p class="skill-name-image">MONGODB</p>
-                                    </div>
-                                    <div class="skill-gane-percentage"></div>
-                                    <div class="skill-gane-outer-css-percentage js-border"></div>
-                                    <div class="percentage-show-container-text js-percentage">85%</div>
-                                </div>
-                                <div class="skills-technical-box-container">
-                                    <div class="skill-image">
-                                        <img style="width: 50px; height: 20px; color:white"
-                                            src="./public/images/mysql.png" alt="">
-                                    </div>
-                                    <div class="skill-name-image-con">
-                                        <p class="skill-name-image">MYSQL</p>
-                                    </div>
-                                    <div class="skill-gane-percentage"></div>
-                                    <div class="skill-gane-outer-css-percentage node-border"></div>
-                                    <div class="percentage-show-container-text node-percentage">80%</div>
-                                </div>
-                                <div class="skills-technical-box-container">
-                                    <div class="skill-image">
-                                        <img style="width: 30px; height: 20px; color:white"
-                                            src="./public/images/The_C_Programming_Language_logo.svg.png" alt="">
-                                    </div>
-                                    <div class="skill-name-image-con">
-                                        <p class="skill-name-image">C</p>
-                                    </div>
-                                    <div class="skill-gane-percentage"></div>
-                                    <div class="skill-gane-outer-css-percentage js-border"></div>
-                                    <div class="percentage-show-container-text js-percentage">85%</div>
-                                </div>
-                                <div class="skills-technical-box-container">
-                                    <div class="skill-image">
-                                        <img style="width: 30px; height: 20px; color:white"
-                                            src="./public/images/github.png" alt="">
-                                    </div>
-                                    <div class="skill-name-image-con">
-                                        <p class="skill-name-image">GITHUB</p>
-                                    </div>
-                                    <div class="skill-gane-percentage"></div>
-                                    <div class="skill-gane-outer-css-percentage node-border"></div>
-                                    <div class="percentage-show-container-text node-percentage">80%</div>
-                                </div>
-                                <div class="skills-technical-box-container">
-                                    <div class="skill-image">
-                                        <img style="width: 60px; height: 20px; color:white"
-                                            src="./public/images/Git-logo.svg.png" alt="">
-                                    </div>
-                                    <div class="skill-name-image-con">
-                                        <p class="skill-name-image">GIT</p>
-                                    </div>
-                                    <div class="skill-gane-percentage"></div>
-                                    <div class="skill-gane-outer-css-percentage git-border"></div>
-                                    <div class="percentage-show-container-text git-percentage">65%</div>
+
                                 </div>
                             </div>
+
                         </div>
                     </div>
                 </div>
@@ -371,50 +419,56 @@
 
                 <div class="professional-skills-container">
                     <div class="technical-skills-box">
-                        <div class="technical-skills-box-heading-container">
-                            <h2 class="skills-name-heading">Professional Skills</h2>
-                            <div class="border-containers-pro"></div>
-                        </div>
-                        <div class="skills-label-show-container">
-                            <div class="skills-label-show-box-container">
-                                <div class="skills-label-box-container">
-                                    <div class="skills-label-box">
-                                        <div class="skills-label-show-box">
-                                            <p class="percentage-show">90%</p>
-                                        </div>
-                                    </div>
-                                    <p class="name-skills">Creativity</p>
-                                </div>
-                                <div class="skills-label-box-container">
-                                    <div class="skills-label-box">
-                                        <div class="skills-label-show-box">
-                                            <p class="percentage-show">60%</p>
-                                        </div>
-                                    </div>
-                                    <p class="name-skills">Communication</p>
+                        <div class="technical-skills">
+
+                            <div class="technical-skills-box-heading-container">
+                                <div class="technical-skills-box-heading professional-skills">
+                                    <h2 class="skills-name-heading">Professional Skills</h2>
+                                    <div class="border-containers-pro"></div>
                                 </div>
                             </div>
-                            <div class="skills-label-show-box-container">
-                                <div class="skills-label-box-container">
-                                    <div class="skills-label-box">
-                                        <div class="skills-label-show-box">
-                                            <p class="percentage-show">75%</p>
+                            <div class="skills-label-show-container">
+                                <div class="skills-label-show-box-container">
+                                    <div class="skills-label-box-container">
+                                        <div class="skills-label-box">
+                                            <div class="skills-label-show-box">
+                                                <p class="percentage-show">90%</p>
+                                            </div>
                                         </div>
+                                        <p class="name-skills">Creativity</p>
                                     </div>
-                                    <p class="name-skills">Problem Solving</p>
+                                    <div class="skills-label-box-container">
+                                        <div class="skills-label-box">
+                                            <div class="skills-label-show-box">
+                                                <p class="percentage-show">60%</p>
+                                            </div>
+                                        </div>
+                                        <p class="name-skills">Communication</p>
+                                    </div>
                                 </div>
-                                <div class="skills-label-box-container">
-                                    <div class="skills-label-box">
-
-                                        <div class="skills-label-show-box">
-                                            <p class="percentage-show">85%</p>
+                                <div class="skills-label-show-box-container">
+                                    <div class="skills-label-box-container">
+                                        <div class="skills-label-box">
+                                            <div class="skills-label-show-box">
+                                                <p class="percentage-show">75%</p>
+                                            </div>
                                         </div>
-
+                                        <p class="name-skills">Problem Solving</p>
                                     </div>
-                                    <p class="name-skills">Teamwork</p>
+                                    <div class="skills-label-box-container">
+                                        <div class="skills-label-box">
+
+                                            <div class="skills-label-show-box">
+                                                <p class="percentage-show">85%</p>
+                                            </div>
+
+                                        </div>
+                                        <p class="name-skills">Teamwork</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
 
@@ -446,7 +500,7 @@
 
             </div>
 
-            <div class="education-main-show-container">
+            <div class="education-main-show-container first-collage-name">
                 <div class="education-main-show-box-container">
                     <div class="education-main-first-container">
                         <div class="education-main-image-container">
@@ -465,7 +519,7 @@
 
                         </div>
                     </div>
-                    <div class="education-main-second-container">
+                    <div class="education-main-second-container ">
                         <div class="education-main-image-container">
 
                             <img src="./public/images/lnjcollage.jpg"
@@ -484,14 +538,14 @@
 
 
                     </div>
-                    <div class="education-main-third-container">
+                    <div class="education-main-third-container last-college-name">
                         <div class="education-main-image-container">
                             <img src="./public/images/kejariwal.jpg"
                                 style="width:80%; height: 90%; border-radius: 10px;  " alt="No loaded">
 
 
                         </div>
-                        <div class="education-main-image-collagename-container">
+                        <div class="education-main-image-collagename-container  ">
                             <div class="education-maincollagename-container">
                                 <h1 class="education-maincoursename">10 Th | All Subject</h1>
                                 <p class="education-maincollagename">+2 Kejriwal High School Jhanjharpur Madhubani
@@ -519,29 +573,53 @@
             </div>
             <div class="project-main-container">
                 <div class="project-container">
-                    <img style="width: 100%; height: 100%; border-radius: 20px; filter: blur(1px);
-                    -webkit-filter: blur(1px);" src="./public/images/Screenshot 2023-07-23 220740.png" alt="">
-                    <h2 class="heading-product">Ecommerce Web App</h2>
-                    <p class="project-discription">I have used react, node, express, mongodb for building my project on
-                        ecommerce web app</p>
-                    <button class="buttonlink" id="ecommerce-app">Visit project</button>
-                </div>
-                <div class="project-container">
-                    <img style="width: 100%; height: 100%; border-radius: 20px; filter: blur(1px);
-                    -webkit-filter: blur(1px);" src="./public/images/Screenshot 2023-07-23 220740.png" alt="">
-                    <h2 class="heading-product">Food Delevery Web App</h2>
-                    <p class="project-discription">I have used react, node, express, mongodb for building my project on
-                        Food Delevery web app</p>
-                    <button class="buttonlink" id="fooddelevery-app">Visit project</button>
+                    <div class="project-box">
+                        <img style="width: 100%; height: 100%; border-radius: 20px; filter: blur(1px);
+                        -webkit-filter: blur(1px);" src="./public/images/Screenshot 2023-07-23 220740.png" alt="">
+                        <div class="project-detail-container">
+                            <h2 class="heading-product">Ecommerce Web App</h2>
+                            <p class="project-discription">I have used react, node, express, mongodb for building my
+                                project
+                                on
+                                ecommerce web app</p>
+                            <button class="buttonlink" id="ecommerce-app">Visit project</button>
+                        </div>
+
+                    </div>
 
                 </div>
                 <div class="project-container">
-                    <img style="width: 100%; height: 100%; border-radius: 20px; filter: blur(1px);
-                    -webkit-filter: blur(1px);" src="./public/images/Screenshot 2023-07-23 220740.png" alt="">
-                    <h2 class="heading-product">Messaging Web App</h2>
-                    <p class="project-discription">I have used react, node, express, mongodb for building my project on
-                        Messaging web app</p>
-                    <button class="buttonlink" id="message">Visit project</button>
+                    <div class="project-box">
+                        <img style="width: 100%; height: 100%; border-radius: 20px; filter: blur(1px);
+                        -webkit-filter: blur(1px);" src="./public/images/Screenshot 2023-07-23 220740.png" alt="">
+                        <div class="project-detail-container">
+                            <h2 class="heading-product">Food Delevery Web App</h2>
+                            <p class="project-discription">I have used react, node, express, mongodb for building my
+                                project
+                                on
+                                Food Delevery web app</p>
+                            <button class="buttonlink" id="fooddelevery-app">Visit project</button>
+                        </div>
+
+                    </div>
+
+
+                </div>
+                <div class="project-container">
+                    <div class="project-box">
+                        <img style="width: 100%; height: 100%; border-radius: 20px; filter: blur(1px);
+                        -webkit-filter: blur(1px);" src="./public/images/Screenshot 2023-07-23 220740.png" alt="">
+                        <div class="project-detail-container">
+                            <h2 class="heading-product">Messaging Web App</h2>
+                            <p class="project-discription">I have used react, node, express, mongodb for building my
+                                project
+                                on
+                                Messaging web app</p>
+                            <button class="buttonlink" id="message">Visit project</button>
+                        </div>
+
+                    </div>
+
 
                 </div>
             </div>
@@ -562,12 +640,11 @@
                 <div class="contacts-main-container-box">
                     <div class="rotate-box-border"></div>
                     <div class="contacts-main-container-box-left">
-                        <img class="contact-image"
-                            src="./public/images/1689520523040(v).jpg" alt=" Not loaded.">
+                        <img class="contact-image" src="./public/images/1689520523040(v).jpg" alt=" Not loaded.">
 
-                            <div class="rotate-border">
+                        <div class="rotate-border">
 
-                            </div>
+                        </div>
                     </div>
                     <div class="contacts-main-container-box-right">
 
@@ -621,106 +698,118 @@
     <footer class="footer-container">
         <div class="footer-mid-container">
             <div class="footer-first-container">
-                <h2 class="footer-text-heading">Vikash`s Portfolio</h2>
-                <p class="footer-text middle">Thank you for visiting my portfolio website. Feel free to reach out to me
-                    for any inquiries or collaboration opportunities.</p>
-                <p class="footer-text ">Keep Rising <span class="fire-icon"> 🚀</span> . Connect with over live chat!
-                </p>
-
+                <div class="footer-first">
+                    <h2 class="footer-text-heading">Vikash`s Portfolio</h2>
+                    <p class="footer-text middle">Thank you for visiting my portfolio website. Feel free to reach out to
+                        me
+                        for any inquiries or collaboration opportunities.</p>
+                    <p class="footer-text ">Keep Rising <span class="fire-icon"> 🚀</span> . Connect with over live
+                        chat!
+                    </p>
+                </div>
             </div>
             <div class="footer-second-container">
-                <h2 class="footer-text-heading">Quick links</h2>
-                <div class="guicklinkarrow-container" id="footer-home">
-                    <p class="quickarrow">
-                        <span class="quickarrow-span">&#8250;</span>
-                    </p>
-                    <p class="quickarrow-text">Home</p>
+                <div class="footer-second">
 
+                    <h2 class="footer-text-heading">Quick links</h2>
+                    <div class="guicklinkarrow-container" id="footer-home">
+                        <p class="quickarrow">
+                            <span class="quickarrow-span">&#8250;</span>
+                        </p>
+                        <p class="quickarrow-text">Home</p>
+
+
+                    </div>
+                    <div class="guicklinkarrow-container" id="footer-about">
+                        <p class="quickarrow">
+                            <span class="quickarrow-span">&#8250;</span>
+                        </p>
+                        <p class="quickarrow-text">About Me</p>
+
+
+                    </div>
+                    <div class="guicklinkarrow-container" id="footer-skils">
+                        <p class="quickarrow">
+                            <span class="quickarrow-span">&#8250;</span>
+                        </p>
+                        <p class="quickarrow-text">Skils</p>
+
+
+                    </div>
+                    <div class="guicklinkarrow-container" id="footer-projects">
+                        <p class="quickarrow">
+                            <span class="quickarrow-span">&#8250;</span>
+                        </p>
+                        <p class="quickarrow-text">Project</p>
+
+                    </div>
+                    <div class="guicklinkarrow-container" id="footer-education">
+                        <p class="quickarrow">
+                            <span class="quickarrow-span">&#8250;</span>
+                        </p>
+
+                        <p class="quickarrow-text">Education</p>
+
+                    </div>
+                    <div class="guicklinkarrow-container" id="footer-contact">
+                        <p class="quickarrow">
+                            <span class="quickarrow-span">&#8250;</span>
+                        </p>
+                        <p class="quickarrow-text">Contact</p>
+
+
+                    </div>
 
                 </div>
-                <div class="guicklinkarrow-container" id="footer-about">
-                    <p class="quickarrow">
-                        <span class="quickarrow-span">&#8250;</span>
-                    </p>
-                    <p class="quickarrow-text">About Me</p>
-
-
-                </div>
-                <div class="guicklinkarrow-container" id="footer-skils">
-                    <p class="quickarrow">
-                        <span class="quickarrow-span">&#8250;</span>
-                    </p>
-                    <p class="quickarrow-text">Skils</p>
-
-
-                </div>
-                <div class="guicklinkarrow-container" id="footer-projects">
-                    <p class="quickarrow">
-                        <span class="quickarrow-span">&#8250;</span>
-                    </p>
-                    <p class="quickarrow-text">Project</p>
-
-                </div>
-                <div class="guicklinkarrow-container" id="footer-education">
-                    <p class="quickarrow">
-                        <span class="quickarrow-span">&#8250;</span>
-                    </p>
-
-                    <p class="quickarrow-text">Education</p>
-
-                </div>
-                <div class="guicklinkarrow-container" id="footer-contact">
-                    <p class="quickarrow">
-                        <span class="quickarrow-span">&#8250;</span>
-                    </p>
-                    <p class="quickarrow-text">Contact</p>
-
-
-                </div>
-
 
 
             </div>
             <div class="footer-third-container">
-                <h2 class="footer-text-heading">Contact Info</h2>
-                <div class="contact-info-container">
-                    <p class="contact-info"><i class="fi-xnsuxl-phone-solid contact-info-icon"></i>
-                        <a href="tel:7362885182" class="attributes">
-                            <p class="contact-info-text">+91 7362885182</p>
-                        </a>
-                    </p>
-                </div>
-                <div class="contact-info-container">
-                    <p class="contact-info"><i class="fi-xwsuxl-envelope-solid contact-info-icon"></i>
-                        <a href="mailto:vikashjjp728@gmail.com" class="attributes">
-                            <p class="contact-info-text">vikashjjp728@gmail.com</p>
-                        </a>
-                    </p>
-                </div>
-                <div class="contact-info-container">
-                    <p class="contact-info"><i
-                            class="fa-solid fa-map-location-dot contact-info-icon contact-info-bottom"></i>
-                        <a href="" class="attributes">
-                            <p class="contact-info-text">Madhubani (Bihar), India-847410</p>
-                        </a>
-                    </p>
-                </div>
+                <div class="footer-third contact-footer">
 
-                <div class="contact-info-list-container">
-                    <p class="contact-info-icon-container"><a href="https://www.linkedin.com/in/vikash-kumar-8467b0253/"
-                            target="_blank" class="link-container"><i class="fi-cnsuxl-linkedin  linkedin"></i></a></p>
-                    <p class="contact-info-icon-container"><a href="https://github.com/vikashcod" target="_blank"
-                            class="link-container"><i class="fi-xnsuxl-github  github"></i></a></p>
-                    <p class="contact-info-icon-container"><a href="mailto: vikashjjp728@gmail.com" target="_blank"
-                            class="link-container"><i class="fi-xwsuxl-envelope-solid mailbox "></i></a></p>
-                    <p class="contact-info-icon-container"><a href="https://twitter.com/vikash2696v" target="_blank"
-                            class="link-container"><i class="fi-xnsuxl-twitter-solid  twiter"></i></a></p>
-                    <p class="contact-info-icon-container"><a href="https://web.telegram.org/k/#-623765924"
-                            target="_blank" class="link-container"><i class="fi-xnsuxl-telegram  telegram"></i></a></p>
+
+                    <h2 class="footer-text-heading">Contact Info</h2>
+                    <div class="contact-info-container">
+                        <p class="contact-info"><i class="fi-xnsuxl-phone-solid contact-info-icon"></i>
+                            <a href="tel:7362885182" class="attributes">
+                                <p class="contact-info-text">+91 7362885182</p>
+                            </a>
+                        </p>
+                    </div>
+                    <div class="contact-info-container">
+                        <p class="contact-info"><i class="fi-xwsuxl-envelope-solid contact-info-icon"></i>
+                            <a href="mailto:vikashjjp728@gmail.com" class="attributes">
+                                <p class="contact-info-text">vikashjjp728@gmail.com</p>
+                            </a>
+                        </p>
+                    </div>
+                    <div class="contact-info-container">
+                        <p class="contact-info"><i
+                                class="fa-solid fa-map-location-dot contact-info-icon contact-info-bottom"></i>
+                            <a href="" class="attributes">
+                                <p class="contact-info-text">Madhubani (Bihar), India-847410</p>
+                            </a>
+                        </p>
+                    </div>
+
+                    <div class="contact-info-list-container">
+                        <p class="contact-info-icon-container"><a
+                                href="https://www.linkedin.com/in/vikash-kumar-8467b0253/" target="_blank"
+                                class="link-container"><i class="fi-cnsuxl-linkedin  linkedin"></i></a></p>
+                        <p class="contact-info-icon-container"><a href="https://github.com/vikashcod" target="_blank"
+                                class="link-container"><i class="fi-xnsuxl-github  github"></i></a></p>
+                        <p class="contact-info-icon-container"><a href="mailto: vikashjjp728@gmail.com" target="_blank"
+                                class="link-container"><i class="fi-xwsuxl-envelope-solid mailbox "></i></a></p>
+                        <p class="contact-info-icon-container"><a href="https://twitter.com/vikash2696v" target="_blank"
+                                class="link-container"><i class="fi-xnsuxl-twitter-solid  twiter"></i></a></p>
+                        <p class="contact-info-icon-container"><a href="https://web.telegram.org/k/#-623765924"
+                                target="_blank" class="link-container"><i class="fi-xnsuxl-telegram  telegram"></i></a>
+                        </p>
+                    </div>
+
                 </div>
 
             </div>
-
 
         </div>
 
